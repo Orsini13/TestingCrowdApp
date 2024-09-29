@@ -14,20 +14,23 @@ const Navbar = () => {
   
   return (
     <div className='flex md:flex-row flex-col-reverse justify-between mb-[35px] gap-6'>
-      <div className='lg:flex-1 flex flex-row  max-w-[458px] py-2 pl-4 pr-2 h-[52px] bg-[#1c1c24] rounded-[100px] '>
-          <input type="text" placeholder='Search for campaings' className='flex w-full font-epilogue font-normal text-[14px] placeholder:text-[#4b5264] textwh bg-transparent outline-none ' />
 
-        <div className='w-[72px] h-full rounded-[20px] bg-[#f0ec28e7] flex justify-center items-center cursor-pointer'>
+      {/* big screen input and search  */}
+      <div className='lg:flex-1 flex flex-row  max-w-[458px] py-2 pl-4 pr-2 h-[52px] bg-[#1c1c24] rounded-[100px] '>
+          <input type="text" placeholder='Search for campaings' className='flex w-full font-epilogue font-normal text-[14px] placeholder:text-[#557188] textwh bg-transparent outline-none ' />
+
+        <div className='w-[72px] h-full rounded-[20px] bg-[#1f88d9] flex justify-center items-center cursor-pointer'>
           <img src={search} alt=""  className='w-[15px] h-[15px] object-contain'/>
 
         </div>
        </div>
-
+  
+      {/* big screen screen button and logo */}
       <div className='sm:flex hidden flex-row justify-end gap-4'>
         <CustomButton 
           btnType="button"
           title={address ? 'Create a campaign' : 'Connect'}
-          styles={address ? ' bg-[#f0ec28e7] ' : ' bg-[#1c1c] '} 
+          styles={address ? ' bg-[#1f88d9] ' : ' bg-[#1c1c] '} 
           handleClick={() => {
             if(address) navigate('create-campaign')  
               else 'connect()'
@@ -40,15 +43,16 @@ const Navbar = () => {
           </div>
         </Link>
       </div>
+
           {/* small screen navigation */}
           <div className='sm:hidden flex justify-between items-center relative'>
             
             <div className='w-[40px] h-[40px] rounded-[10px] bg-[#2c2f32] flex justify-center items-center cursor-pointer'>
-              <img src={thirdweb} alt="user" className="w-[60%] h-[60%] object-contain " />
+              <img src={tronlogo} alt="user" className="w-[60%] h-[60%] object-contain " />
             </div> 
 
             <img src={menu} alt="menu"
-                 className='w-[34px] h-[34px] obbject-contian cursor-pointer'
+                 className='w-[34px] h-[34px] object-contain cursor-pointer'
                  onClick={() => setToggleDrawer((prev) => !prev)}
             />
 
@@ -78,7 +82,7 @@ const Navbar = () => {
                <CustomButton 
                   btnType="button"
                   title={address ? 'Create a campaign' : 'Connect'}
-                  styles={address ? 'bg-[#1dc071]' : 'bg-[#8c6dfd]'} 
+                  styles={address ? 'bg-[#1f88d9' : 'bg-[#23b410]'} 
                   handleClick={() => {
                   if(address) navigate('create-campaign')  
                   else 'connect()'

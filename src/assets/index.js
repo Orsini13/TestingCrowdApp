@@ -13,8 +13,10 @@ import money from './money.svg';
 import loader from './loader.svg';
 import thirdweb from './thirdweb.png';
 import tronlogo from './tronlogo.png';
+import empty from './empty.jpeg'
 
 export {
+  empty,
   tagType,
   createCampaign,
   dashboard,
