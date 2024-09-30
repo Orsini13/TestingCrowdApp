@@ -1,10 +1,8 @@
 import React from 'react'
-import {Empty, FormCard } from '../Components'
-import {useCampaigns} from '../Hooks'
+import {Empty } from '../Components'
 
 
 const Home = () => {
-    const {campaigns, addCampaigns} = useCampaigns();
 
   return (
     <div>
