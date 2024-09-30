@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 // import {customButton, FormField} from '../Components'
-import {money} from '../assets'
+import {createCampaign, money} from '../assets'
 import {checkIfImage} from '../Utils'
 import { useNavigate } from 'react-router-dom'
 import { FormField, CustomButton } from '../Components'
@@ -21,9 +21,22 @@ const handleFormFieldChange = (fieldName, e) => {
   setForm({...form, [fieldName]: e.target.value})
 }
 
-const handleSubmit = (e) => {
+const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(form)
+
+    checkIfImage(form.image, async (exists) => {
+      if(exists){
+        setIsLoading(true)
+        await createCampaign({...form, target: ethers.utils.parseUnits(form.target, 18)})
+        setIsLoading(false);
+        navigate('/');
+      } else{
+        alert('Provide valid image URL')
+        setForm({...form, image: ''})
+      }
+    })
+
+        console.log(form)
 }
 
 
