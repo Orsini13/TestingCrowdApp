@@ -6,3 +6,4 @@ export{ default as FormField} from './FormField';
 export {default as FundCard} from './FundCard'
 
 export {default as Empty} from './Empty';
+export {default as DisplayCampaigns} from './DisplayCampaigns';

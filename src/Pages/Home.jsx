@@ -1,17 +1,15 @@
-import React from 'react'
-import {Empty } from '../Components'
+import React, {useState, useEffect} from 'react'
+import {DisplayCampaigns} from '../Components'
 
+const Home = ({ isOpen, onClose, handleSubmit, buttonLabel, title, description }) => {
 
-const Home = () => {
+  // const [isLoading, setIsLoading]    = useState(false);
+  // const [campaigns, setCampaign] =  useState([]);
 
+  
   return (
     <div>
-
-     <Empty />
-        
-
-
-
+      <DisplayCampaigns />
     </div>
   )
 }

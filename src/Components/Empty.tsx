@@ -4,7 +4,7 @@ import {empty, lighthouse} from '../assets'
 
 const Empty = () => {
   return (
-    <div className=' inline-block justify-center items-center h-screen'>
+    <div className='flex justify-center flex-wrap items-center h-screen'>
 
     <img src={lighthouse} alt="" 
         className="w-full mb-2 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-auto"

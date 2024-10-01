@@ -14,9 +14,11 @@ import loader from './loader.svg';
 import thirdweb from './thirdweb.png';
 import tronlogo from './tronlogo.png';
 import empty from './empty.jpeg';
-import lighthouse from './lighthouse.jpeg'
+import lighthouse from './lighthouse.jpeg';
+import bearport from './bearport.jpg';
 
 export {
+  bearport,
   empty,
   lighthouse,
   tagType,
