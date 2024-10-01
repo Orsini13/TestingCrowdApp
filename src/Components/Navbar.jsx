@@ -30,7 +30,7 @@ const Navbar = () => {
         <CustomButton 
           btnType="button"
           title={address ? 'Create a campaign' : 'Connect'}
-          styles={address ? ' bg-[#1f88d9] ' : ' bg-[#4311cccc] '} 
+          styles={address ? ' bg-[#1f88d9] ' : ' bg-[#2bdb49cc] '} 
           handleClick={() => {
             if(address) navigate('create-campaign')  
               else 'connect()'
@@ -72,7 +72,7 @@ const Navbar = () => {
                     className={`w-[24px] h-[24px] object-contain ${isActive === Link.name ? 'grayscale-0' : 'grayscale'}`}
                     />
                     <p
-                    className={`ml-[20px] font-epilogue font-semibold text-[14px] ${isActive === Link.name ? `text-[#1dc071]` : `text-[#808191]`}`}
+                    className={`ml-[20px] font-epilogue font-semibold text-[14px] ${isActive === Link.name ? `text-[#1f88d9]` : `text-[#808191]`}`}
                     > {Link.name}</p>
                   </li>
                 ))}

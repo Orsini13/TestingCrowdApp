@@ -5,7 +5,7 @@ import './Components.css'
 const DisplayCampaigns = () => {
 
   return (
-    <div className='justify-center flex-wrap mt-[0px] flex'>
+    <div className='justify-center flex-wrap mt-[0px] flex'  >
         <div className='card'>
             <img src={bearport} alt="" className='w-[100%] h-auto mx-1 my-1'/>
             <div className="p-2" >
@@ -31,6 +31,7 @@ const DisplayCampaigns = () => {
             </div>
         </div>
     </div>
+    
   )
 }
 

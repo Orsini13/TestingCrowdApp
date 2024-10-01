@@ -76,10 +76,10 @@ const handleSubmit = async (e) => {
               handleChange={(e)=> handleFormFieldChange('description', e)} 
             />
 
-<div className='w-full flex justify-start items-center p-4 bg-[#8c6dfd] h-[128px] rounded-[10px] my-4'>
+        {/* <div className='w-full flex justify-start items-center p-4 bg-[#8c6dfd] h-[128px] rounded-[10px] my-4'>
           <img src={money} alt="money" className='w-[40px] h-[40px] object-contain'/>
           <h4 className='text-white font-epilogue font-bold text-[25px] ml-[20px]'>You will get 100% of the money raised</h4>
-        </div>
+        </div> */}
 
         <div className="flex flex-wrap gap-[40px]">
             <FormField
