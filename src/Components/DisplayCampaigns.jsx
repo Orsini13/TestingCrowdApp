@@ -20,9 +20,9 @@ const DisplayCampaigns = () => {
                 <div className='flex gap-4'>
                  <a href="" className=' flex py-[8px] px-[5px] rounded-sm mt-[6px] text-[#040f3dcc1] bg-[#afcee2]	'>
                      <h1 className='font-serif'>Full details</h1> 
-                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                     {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                          <path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
-                    </svg>
+                    </svg> */}
                  </a>    
                 </div>
                 
