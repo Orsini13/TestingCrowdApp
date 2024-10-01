@@ -15,10 +15,10 @@ import thirdweb from './thirdweb.png';
 import tronlogo from './tronlogo.png';
 import empty from './empty.jpeg';
 import lighthouse from './lighthouse.jpeg';
-import bearport from './bearport.jpg';
+import Bearport from './Bearport.jpg';
 
 export {
-  bearport,
+  Bearport,
   empty,
   lighthouse,
   tagType,
