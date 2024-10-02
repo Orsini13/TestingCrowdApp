@@ -1,17 +1,19 @@
-import React, {useState, useEffect} from 'react'
-import {DisplayCampaigns} from '../Components'
+import React, { useState, useEffect } from "react";
+import { DisplayCampaigns, Transition, AnimatedPage} from "../Components";
 
-const Home = ({ isOpen, onClose, handleSubmit, buttonLabel, title, description }) => {
-
+const Home = () => {
   // const [isLoading, setIsLoading]    = useState(false);
   // const [campaigns, setCampaign] =  useState([]);
 
-  
   return (
     <div>
-      <DisplayCampaigns />
-    </div>
-  )
-}
+        <AnimatedPage>
+           <DisplayCampaigns />
 
-export default Home
+        </AnimatedPage>
+      
+    </div>
+  );
+};
+
+export default Home;

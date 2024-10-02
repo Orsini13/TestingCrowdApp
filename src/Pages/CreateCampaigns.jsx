@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import {createCampaign, money} from '../assets'
 import {checkIfImage} from '../Utils'
 import { useNavigate } from 'react-router-dom'
-import { FormField, CustomButton } from '../Components'
+import { FormField, CustomButton, AnimatedPage } from '../Components'
 
 const CreateCampaigns = () => {
 const navigate = useNavigate();
@@ -42,6 +42,7 @@ const handleSubmit = async (e) => {
 
 
   return (
+    <AnimatedPage>
     <div className='bg-[#1c1c24] flex justify-center items-center flex-col rounded-[10px] sm:p-10 p-4'>
         {isLoading && 'Loader...'}
         <div  className='flex justify-center items-center p-[16px] sm:min-w-[380px] b-[#3a3a43] rounded-[10px]'>
@@ -116,6 +117,7 @@ const handleSubmit = async (e) => {
 
         </form>
     </div>
+    </AnimatedPage>
   )
 }
 

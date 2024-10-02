@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 // import './index.css'
 import { Home, Profile, CreateCampaigns, CampaignDetails,FundCard } from './Pages' ;
 import {Sidebar , Navbar, } from './Components'
+import { AnimatePresence } from 'framer-motion';
 
 const  App = () => {
 
@@ -16,14 +17,18 @@ const  App = () => {
       <div className='flex-1 max-sm:w-full max-w-[1280px] mx-auto sm:pr-5'>
           <Navbar />
           
-          <Routes>
+          <AnimatePresence mode='wait'>
+           <Routes location={location} key={location.pathname}>
             <Route path='/' element={<Home />}/>
             <Route path='/home' element={<Home />}/>
             <Route path='/profile' element={<Profile/>}/>
             <Route path='/create-campaign' element={<CreateCampaigns  />}/>
             <Route path='/Campaing-details/:id' element={<CampaignDetails/>}/>
             <Route path='/FundCard' element={<FundCard />}/>
-          </Routes>
+           </Routes>
+          </AnimatePresence>
+
+       
 
       </div>
    </div>
