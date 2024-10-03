@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 // import './index.css'
-import { Home, Profile, CreateCampaigns, CampaignDetails,FundCard } from './Pages' ;
+import { Home, Profile, CreateCampaigns, CampaignDetails,FundCard, CampaignsList } from './Pages' ;
 import {Sidebar , Navbar, } from './Components'
 import { AnimatePresence } from 'framer-motion';
 
@@ -25,6 +25,7 @@ const  App = () => {
             <Route path='/create-campaign' element={<CreateCampaigns  />}/>
             <Route path='/Campaing-details/:id' element={<CampaignDetails/>}/>
             <Route path='/FundCard' element={<FundCard />}/>
+            <Route path='/Campaigns-list' element={<CampaignsList />}/>
            </Routes>
           </AnimatePresence>
 

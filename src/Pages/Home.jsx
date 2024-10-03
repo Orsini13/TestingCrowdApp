@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { DisplayCampaigns, Transition, AnimatedPage} from "../Components";
+
 
 const Home = () => {
   // const [isLoading, setIsLoading]    = useState(false);
@@ -7,10 +7,6 @@ const Home = () => {
 
   return (
     <div>
-        <AnimatedPage>
-           <DisplayCampaigns />
-
-        </AnimatedPage>
       
     </div>
   );

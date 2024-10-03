@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 // import {customButton, FormField} from '../Components'
-import {createCampaign, money} from '../assets'
+import { money} from '../assets'
 import {checkIfImage} from '../Utils'
 import { useNavigate } from 'react-router-dom'
 import { FormField, CustomButton, AnimatedPage } from '../Components'
