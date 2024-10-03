@@ -13,6 +13,10 @@ export default {
       boxShadow:{
         secondary: '10px 10px 20px rgba(2, 2, 2, 0.25)',
       },
+      colors: {
+        customGray: '#3C3D37',
+        customGreen: '#697565',
+      },
     },
   },
   plugins:[],

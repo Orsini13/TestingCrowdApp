@@ -8,7 +8,7 @@ import { AnimatePresence } from 'framer-motion';
 const  App = () => {
 
   return (
-   <div className='relative sm:-8 p-4 bg-[#b7cddf] min-h-screen flex flex-row'>
+   <div className='relative sm:-8 p-4  bg-gradient-to-r from-customGray to-customGreen min-h-screen flex flex-row'  >
       {/* <div className='sm:flex hidden mr-10 relative'>
         <Sidebar/>
       </div> */}

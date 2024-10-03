@@ -16,8 +16,10 @@ import tronlogo from './tronlogo.png';
 import empty from './empty.jpeg';
 import lighthouse from './lighthouse.jpeg';
 import Bearport from './Bearport.jpg';
+import herobg from './herobg.png';
 
 export {
+  herobg,
   Bearport,
   empty,
   lighthouse,
