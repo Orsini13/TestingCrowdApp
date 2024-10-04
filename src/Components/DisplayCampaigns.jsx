@@ -2,7 +2,7 @@ import React from "react";
 import { Bearport } from "../assets";
 import "./Components.css";
 
-const DisplayCampaigns = ({ title, desc, date, goal }) => {
+const DisplayCampaigns = ({ title, desc, deadline, goal }) => {
   return (
     <div className="justify-center flex-wrap mt-[0px] flex">
       <div className="card">
@@ -14,14 +14,13 @@ const DisplayCampaigns = ({ title, desc, date, goal }) => {
           <p className="font-semibold  mt-1"> {desc}... </p>
 
           <div className="flex gap-3 my-2">
-            <h3 className="font-semibold"> {date} </h3>
+            <h3 className="font-semibold"> {deadline} </h3>
             <h2 className="font-semibold font-serif">
               {" "}
               <em className="font-bold">{goal}</em>
             </h2>
           </div>
 
-          {/* //   id="btn" */}
           <div className="flex gap-4">
             <button className="flex pl-3 p-[8px] rounded-md mt-[6px] text-[#040f3dcc1] bg-[#afcee2] shadow-md hover:bg-opacity-60">
               See more

@@ -15,7 +15,7 @@ const CampaignsList = () => {
               key={index}
               title={campaign.title}
               desc={campaign.desc}
-              date={campaign.date}
+              deadline={campaign.deadline}
               goal={campaign.goal}
             />
           ))}
